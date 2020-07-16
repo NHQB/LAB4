@@ -6,7 +6,7 @@ Public Class Car
     Private carModel As String = String.Empty
     Private carYear As String = String.Empty
     Private carPrice As String = String.Empty
-    Private carNew As Boolean = False
+    Private carNewCondition As Boolean = False
     Private carInternalID As Integer = 0
     Shared carCount As Integer = 0
 #End Region
@@ -23,18 +23,19 @@ Public Class Car
     ''' <summary>
     ''' Create a new car using provided values
     ''' </summary>
-    ''' <param name="number">Student ID Number</param>
-    ''' <param name="name">Student Name</param>
-    ''' <param name="program">Student Program of Study</param>
-    ''' <param name="tuitionStatus">Student Tuition Payment Status</param>
-    Public Sub New(number As String, name As String, program As String, tuitionStatus As Boolean)
+    ''' <param name="make">Car make</param>
+    ''' <param name="model">Car model</param>
+    ''' <param name="year">Year of the car</param>
+    ''' <param name="price">Car price</param>
+    ''' <param name="newCondition">Car new status</param>
+    Public Sub New(make As String, model As String, year As String, price As String, newCondition As Boolean)
         carInternalID = carCount
         carCount += 1
-        Me.Make = Make
-        Me.Model = Model
-        Me.Year = Year
-        Me.Price = Price
-        Me.Neww = Neww
+        Me.Make = make
+        Me.Model = model
+        Me.Year = year
+        Me.Price = price
+        Me.NewCondition = newCondition
     End Sub
 #End Region
 
@@ -95,12 +96,12 @@ Public Class Car
     '''  Get/Set whether the car is new
     ''' </summary>
     ''' <returns>New status as boolean</returns>
-    Public Property Neww() As Boolean
+    Public Property NewCondition() As Boolean
         Get
-            Return carNew
+            Return carNewCondition
         End Get
         Set(ByVal value As Boolean)
-            carNew = value
+            carNewCondition = value
         End Set
     End Property
 
