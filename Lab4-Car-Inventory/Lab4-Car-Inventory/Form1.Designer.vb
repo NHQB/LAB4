@@ -96,7 +96,7 @@ Partial Class Form1
         '
         Me.cbMake.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbMake.FormattingEnabled = True
-        Me.cbMake.Items.AddRange(New Object() {"2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"})
+        Me.cbMake.Items.AddRange(New Object() {"Acura ", "Audi ", "Bently ", "BMW ", "Bugati", "Cadillac", "Chevrolet", "Ferrari", "Ford ", "Honda ", "Huyndai ", "Jaguar", "Jeep ", "Kia ", "Lamborghini", "Land Rover ", "Lexus", "Maserati", "Mazda ", "Mercedes-Benz ", "Mini", "Mitsubishi ", "Peugeot ", "Porsche ", "Nissan ", "Ram ", "Roll Royce ", "Subaru ", "Suzuki ", "Tesla ", "Toyota ", "Volkswagen ", "Volvo "})
         Me.cbMake.Location = New System.Drawing.Point(110, 12)
         Me.cbMake.Name = "cbMake"
         Me.cbMake.Size = New System.Drawing.Size(121, 24)

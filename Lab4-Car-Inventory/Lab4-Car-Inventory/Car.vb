@@ -7,8 +7,8 @@ Public Class Car
     Private carYear As String = String.Empty
     Private carPrice As String = String.Empty
     Private carNewCondition As Boolean = False
-    Private carInternalID As Integer = 0
-    Shared carCount As Integer = 0
+    Private carInternalID As Integer = 1
+    Shared carCount As Integer = 1
 #End Region
 
 #Region "Constructors"
